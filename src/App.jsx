@@ -2,7 +2,17 @@
 const Card =({title}) =>{
     return(
 
-        <div>
+        <div   style={{
+           
+
+border :'1px sloid #4b5362',
+padding :'20px',
+margin:'10px',
+backgroundColor:'#31363f',
+borderRadius:'10px',
+minHeight:'100px',
+
+        }}>
             <h2>{title}</h2>
         </div>
     )
@@ -13,10 +23,10 @@ const Card =({title}) =>{
 const App =() =>{
 return(
 
-    <div>
+    <div className="card-container">
 
 
-<h2>Function Arrow Component</h2>
+
 
 <Card title="Star Wars"/>
 <Card title="Avatar"/>
