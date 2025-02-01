@@ -7,8 +7,8 @@ const Card =({title}) =>{
     //When clicked, setHasLiked updates the state to true, changing the button text to "Unlike"
     const[hasLiked,setHasLiked] = useState(false);
 
-    
-         //used to check activity on console
+
+         //used to check activity on console 37:57
     useEffect(()=>{console.log(`${title} has been liked : ${hasLiked}`)});
 
 
