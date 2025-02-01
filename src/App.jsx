@@ -2,7 +2,7 @@
 const Card =({title}) =>{
     return(
 
-        <div   style={{
+        <div  className="card" style={{
            
 
 border :'1px sloid #4b5362',
