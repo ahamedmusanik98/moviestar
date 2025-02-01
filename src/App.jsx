@@ -10,7 +10,7 @@ const Card =({title}) =>{
 
 
 <button onClick={ ()=>setHasLiked(true)}>
-    Liked
+    {hasLiked ? 'Liked':'Like'}
 </button>
 
         </div>
