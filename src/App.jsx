@@ -16,7 +16,7 @@ const[count,setCount]=useState(0);
 
     return(
 
-        <div  className="card"  onClick={()=>setCount(count+1)} >
+        <div  className="card"  onClick={()=>setCount((prevState) =>prevState+1)} >
             <h2>{title}</h2>
 
 
