@@ -11,13 +11,13 @@ const[count,setCount]=useState(0);
 
 
          //used to check activity on console 37:57
-    useEffect(()=>{console.log(`${title} has been liked : ${hasLiked}`)});
+    useEffect(()=>{console.log(`${title} has been liked : ${hasLiked}`)},[hasLiked]);
 
 
     return(
 
-        <div  className="card"  onClick={()=>setCount((prevState) =>prevState+1)} >
-            <h2>{title}</h2>
+        <div  className="card"  onClick={()=>setCount(count+1)} >
+            <h2>{title}<br/>{count||null}</h2>
 
 
 <button onClick={ ()=>setHasLiked(!hasLiked)}>
