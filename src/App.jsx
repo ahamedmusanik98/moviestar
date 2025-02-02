@@ -3,6 +3,8 @@ import { useState } from "react"
 
 const Card =({title}) =>{
 
+const[count,setCount]=useState(0);
+
     //is a React state declaration using the useState hook
     //When clicked, setHasLiked updates the state to true, changing the button text to "Unlike"
     const[hasLiked,setHasLiked] = useState(false);
@@ -14,7 +16,7 @@ const Card =({title}) =>{
 
     return(
 
-        <div  className="card" >
+        <div  className="card"  onClick={()=>setCount(count+1)} >
             <h2>{title}</h2>
 
 
