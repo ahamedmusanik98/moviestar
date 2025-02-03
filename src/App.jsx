@@ -10,7 +10,7 @@ const App = () => {
 
 <h1>
 
-Find Movies You'll Enjoy Without the Hassle
+Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hassle
 </h1>
   </header>
 </div>
