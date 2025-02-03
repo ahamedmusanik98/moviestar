@@ -14,7 +14,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 </h1>
   </header>
 </div>
-
+<p>Search</p>
 
 
   </main>
