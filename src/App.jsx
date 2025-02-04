@@ -3,7 +3,7 @@ import Search from './components/Search'
 
 const App = () => {
 
-  const[searchTerm,setserachTerm] =useState('I AM BATMAN');
+  const[searchTerm,setserachTerm] =useState('');
 
   return (
     <main> 
@@ -18,9 +18,11 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 </h1>
 
   </header>
+  <Search searchTerm={searchTerm} setserachTerm={setserachTerm}/>
+  <h1 className='text-white'>{searchTerm}</h1>
+
 </div>
 
-<Search searchTerm={searchTerm} setserachTerm={searchTerm}/>
 
   </main>
   )
