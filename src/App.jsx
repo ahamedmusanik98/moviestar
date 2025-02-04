@@ -1,4 +1,5 @@
 import React from 'react'
+import Search from './components/Search'
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 
   </header>
 </div>
-<p>Search</p>
 
+<Search/>
 
   </main>
   )
