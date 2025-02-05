@@ -4,6 +4,8 @@ import Search from './components/Search'
 
 const API_BASE_URL='https://api.themoviedb.org/3';
 
+const API_KEY=import.meta.env.VITE_TMDB_API_KEY;
+
 //API -Apllication Programming Interface -a set of rules that  allows one software application to talk to another 
 
 const App = () => {
