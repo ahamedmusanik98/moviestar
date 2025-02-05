@@ -2,6 +2,9 @@ import React, { useEffect,useState } from 'react'
 import Search from './components/Search'
 
 
+const API_BASE_URL='https://api.themoviedb.org/3';
+
+//API -Apllication Programming Interface -a set of rules that  allows one software application to talk to another 
 
 const App = () => {
 
@@ -9,7 +12,7 @@ const App = () => {
 
 
   useEffect(()=>{
-    
+
   },[])
 
   return (
