@@ -8,6 +8,14 @@ const API_KEY=import.meta.env.VITE_TMDB_API_KEY;
 
 //API -Apllication Programming Interface -a set of rules that  allows one software application to talk to another 
 
+const API_OPTIONS ={
+  method:'GET',
+  headers: {
+    accepet :'application/json',
+    Authorization :'Bearer ${API_KEY}'
+  }
+}
+
 const App = () => {
 
   const[searchTerm,setserachTerm] =useState('');
