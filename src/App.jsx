@@ -12,7 +12,7 @@ const API_OPTIONS ={
   method:'GET',
   headers: {
     accepet :'application/json',
-    Authorization :'Bearer ${API_KEY}'
+    Authorization :`Bearer ${API_KEY}`
   }
 }
 
