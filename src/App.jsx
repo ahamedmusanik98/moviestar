@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import Search from './components/Search'
+import { use } from 'react';
 
 
 const API_BASE_URL='https://api.themoviedb.org/3';
@@ -19,6 +20,8 @@ const API_OPTIONS ={
 const App = () => {
 
   const[searchTerm,setserachTerm] =useState('');
+
+  const[errorMessage,setErrorMessage]=useState()
 
   const fetchMovies = async() =>{
   try{
