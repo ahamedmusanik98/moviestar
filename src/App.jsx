@@ -21,7 +21,7 @@ const App = () => {
 
   const[searchTerm,setserachTerm] =useState('');
 
-  const[errorMessage,setErrorMessage]=useState()
+  const[errorMessage,setErrorMessage]=useState('');
 
   const fetchMovies = async() =>{
   try{
