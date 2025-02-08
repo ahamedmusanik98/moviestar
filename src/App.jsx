@@ -49,10 +49,12 @@ setErrorMessage('Error feching Movies.try again later.')
 
 Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hassle
 </h1>
-
+<Search searchTerm={searchTerm} setserachTerm={setserachTerm}/>
   </header>
-  <Search searchTerm={searchTerm} setserachTerm={setserachTerm}/>
-  <h1 className='text-white'>{searchTerm}</h1>
+  
+ <section className ='all-movies'>
+
+ </section>
 
 </div>
 
