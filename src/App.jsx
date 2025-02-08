@@ -53,7 +53,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
   </header>
   
  <section className ='all-movies'>
-
+<h2>All Movies</h2>
  </section>
 
 </div>
