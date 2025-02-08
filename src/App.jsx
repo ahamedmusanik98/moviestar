@@ -28,6 +28,7 @@ const App = () => {
 
   } catch(error){
 console.error(`Error fetching movies :${error}`);
+setErrorMessage('Error feching Movies.try again later.')
 
   }
 
