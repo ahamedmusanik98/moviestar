@@ -29,6 +29,7 @@ const App = () => {
 
     const response =await fetchMovies(endpoint,API_OPTIONS);
 
+    alert(response);
 
   } catch(error){
 console.error(`Error fetching movies :${error}`);
@@ -39,7 +40,7 @@ setErrorMessage('Error feching Movies.try again later.')
   }
 
   useEffect(()=>{
-
+    fetchMovies();
   },[])
 
   return (
