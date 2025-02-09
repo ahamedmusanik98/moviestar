@@ -27,6 +27,8 @@ const App = () => {
   try{
     const endpoint=`${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
 
+    const response =await fetchMovies(endpoint,API_OPTIONS);
+
 
   } catch(error){
 console.error(`Error fetching movies :${error}`);
