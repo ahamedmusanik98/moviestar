@@ -29,8 +29,8 @@ const App = () => {
 
     const response =await fetchMovies(endpoint,API_OPTIONS);
 
-    alert(response);
-
+  throw new Error('Failed to fetch movies');
+  
   } catch(error){
 console.error(`Error fetching movies :${error}`);
 setErrorMessage('Error feching Movies.try again later.')
