@@ -24,24 +24,23 @@ const App = () => {
   const[errorMessage,setErrorMessage]=useState('');
 
   
-  const fetchMovies = async() =>{
-  try{
-    const endpoint=`${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
-
-    const response =await fetchMovies(endpoint,API_OPTIONS);
-if(!response.ok){
-  throw new Error('Failed to fetch movies');
-}
-  const data =await response.json();
-  console.log(data);
+  const fetchMovies = async () => {
+    try {
+      const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
   
-  } catch(error){
-console.error(`Error fetching movies :${error}`);
-setErrorMessage('Error feching Movies.try again later.');
-
+      const response = await fetchMovies(endpoint, API_OPTIONS);  // Fix: Use fetch here instead of fetchMovies
+      if (!response.ok) {
+        throw new Error('Failed to fetch movies');
+      }
+      const data = await response.json();
+      console.log(data);
+  
+    } catch (error) {
+      console.error(`Error fetching movies: ${error}`);
+      setErrorMessage('Error fetching Movies. Try again later.');
+    }
   }
-
-  }
+  
 
   useEffect(()=>{
     fetchMovies();
@@ -61,11 +60,9 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 <Search searchTerm={searchTerm} setserachTerm={setserachTerm}/>
   </header>
   
- <section className ='all-movies'>
+ <section className ="all-movies">
 <h2>All Movies</h2>
-
-
-{errorMessage && <p className='text-red-500'></p>}
+{errorMessage && <p className="text-red-500"></p>}
  </section>
 
 </div>
