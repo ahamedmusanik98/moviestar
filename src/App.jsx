@@ -23,6 +23,7 @@ const App = () => {
 
   const[errorMessage,setErrorMessage]=useState('');
 
+  
   const fetchMovies = async() =>{
   try{
     const endpoint=`${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
@@ -36,7 +37,7 @@ if(!response.ok){
   
   } catch(error){
 console.error(`Error fetching movies :${error}`);
-setErrorMessage('Error feching Movies.try again later.')
+setErrorMessage('Error feching Movies.try again later.');
 
   }
 
