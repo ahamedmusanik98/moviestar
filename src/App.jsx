@@ -25,13 +25,16 @@ const App = () => {
 
   
   const fetchMovies = async () => {
+
     try {
       const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
   
-      const response = await fetchMovies(endpoint, API_OPTIONS);  // Fix: Use fetch here instead of fetchMovies
+      const response = await fetch(endpoint, API_OPTIONS);  
+
       if (!response.ok) {
         throw new Error('Failed to fetch movies');
       }
+
       const data = await response.json();
       console.log(data);
   
@@ -62,7 +65,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
   
  <section className ="all-movies">
 <h2>All Movies</h2>
-{errorMessage && <p className="text-red-500"></p>}
+{errorMessage && <p className="text-red-500">{errorMessage}</p>}
  </section>
 
 </div>
