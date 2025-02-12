@@ -25,6 +25,7 @@ const App = () => {
 
   const [movieList,setMovieList] =useState([]);
 
+  const [isLoading,setIsLoading] =useState(false);
   
   const fetchMovies = async () => {
 
