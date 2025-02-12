@@ -23,6 +23,8 @@ const App = () => {
 
   const [errorMessage, setErrorMessage] = useState('');
 
+  const [movieList,setMovieList] =useState([]);
+
   
   const fetchMovies = async () => {
 
@@ -36,7 +38,12 @@ const App = () => {
       }
 
       const data = await response.json();
-      console.log(data);
+      
+      if(data.Response == 'False'){
+        setErrorMessage(data.Error || 'Failed to fetch movies');
+      }
+
+
   
     } catch (error) {
       console.error(`Error fetching movies: ${error}`);
