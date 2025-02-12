@@ -13,15 +13,15 @@ const API_OPTIONS ={
   method:'GET',
   headers: {
     accepet :'application/json',
-    Authorization :`Bearer ${API_KEY}`
-  }
+    Authorization :`Bearer ${API_KEY}`,
+  },
 }
 
 const App = () => {
 
-  const[searchTerm,setserachTerm] =useState('');
+  const [searchTerm, setserachTerm] = useState('');
 
-  const[errorMessage,setErrorMessage]=useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   
   const fetchMovies = async () => {
@@ -29,7 +29,7 @@ const App = () => {
     try {
       const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
   
-      const response = await fetchMovies(endpoint, API_OPTIONS);  
+      const response = await fetch(endpoint, API_OPTIONS);  
 
       if (!response.ok) {
         throw new Error('Failed to fetch movies');
