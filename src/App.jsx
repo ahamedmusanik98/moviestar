@@ -43,10 +43,11 @@ const App = () => {
       if(data.Response == 'False'){
         setErrorMessage(data.Error || 'Failed to fetch movies');
   setMovieList([]);
+  return;
 
       }
 
-
+setMovieList(data.results || []);
   
     } catch (error) {
       console.error(`Error fetching movies: ${error}`);
