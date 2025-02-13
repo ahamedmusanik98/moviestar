@@ -29,6 +29,7 @@ const App = () => {
   
   const fetchMovies = async () => {
     setIsLoading(true);
+    setErrorMessage('');
 
     try {
       const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
