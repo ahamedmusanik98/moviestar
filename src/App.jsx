@@ -54,6 +54,9 @@ setMovieList(data.results || []);
     } catch (error) {
       console.error(`Error fetching movies: ${error}`);
       setErrorMessage('Error fetching Movies. Try again later.');
+    } finally{
+
+      setIsLoading(false);
     }
   }
   
