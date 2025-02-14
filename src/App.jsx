@@ -84,8 +84,12 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 {isLoading ?(
 <p className='text-white'>Loading......</p>
 
-) :errorMessage ?(
-  <p>{errorMessage}</p>
+) : errorMessage ?(
+  <p  className='text-red'>{errorMessage}</p>
+) : (
+  <ul>
+    
+  </ul>
 )
 }
  </section>
