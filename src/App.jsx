@@ -81,7 +81,11 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
   
  <section className ="all-movies">
 <h2>All Movies</h2>
-{errorMessage && <p className="text-red-500">{errorMessage}</p>}
+{isLoading ?(
+<p className='text-white'>Loading......</p>
+
+)
+}
  </section>
 
 </div>
