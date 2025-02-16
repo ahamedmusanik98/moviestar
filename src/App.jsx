@@ -89,7 +89,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 ) : (
   <ul>
     {movieList.map((movie)=>(
-<p className='text-white'>{movie.title}</p>
+<p key={movie.id} className='text-white'>{movie.title}</p>
  )) }
   </ul>
 )
