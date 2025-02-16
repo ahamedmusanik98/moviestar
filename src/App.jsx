@@ -56,7 +56,7 @@ setMovieList(data.results || []);
       setErrorMessage('Error fetching Movies. Try again later.');
     } finally{
 
-      setIsLoading(false);
+      setIsLoading(true);
     }
   }
   
