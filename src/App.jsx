@@ -25,7 +25,7 @@ const App = () => {
 
   const [movieList,setMovieList] =useState([]);
 
-  const [isLoading,setIsLoading] =useState(true);
+  const [isLoading,setIsLoading] =useState(false);
   
   const fetchMovies = async () => {
     setIsLoading(true);
@@ -56,7 +56,7 @@ setMovieList(data.results || []);
       setErrorMessage('Error fetching Movies. Try again later.');
     } finally{
 
-      setIsLoading(true);
+      setIsLoading(false);
     }
   }
   
@@ -80,7 +80,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
   </header>
   
  <section className ="all-movies">
-<h2>All Movies</h2>
+<h2 className='mt-[20px]'>All Movies</h2>
 {isLoading ?(
   <Spinner/>
 
