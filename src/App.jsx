@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import Search from './components/Search'
 import { use } from 'react';
+import MovieCard from './components/MovieCard';
 
 
 const API_BASE_URL='https://api.themoviedb.org/3';
@@ -89,7 +90,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 ) : (
   <ul>
     {movieList.map((movie)=>(
-<p key={movie.id} className='text-white'>{movie.title}</p>
+<MovieCard/>
  )) }
   </ul>
 )
