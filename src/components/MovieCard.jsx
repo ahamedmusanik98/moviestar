@@ -1,8 +1,10 @@
 import React from 'react'
 
-const MovieCard = ({movie}) => {
+const MovieCard = ({movie:{title}}) => {
   return (
-    <div>MovieCard</div>
+    <div>
+        <p className='text-white'>{title}</p>
+    </div>
   )
 }
 
