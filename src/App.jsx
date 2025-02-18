@@ -90,7 +90,7 @@ Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hass
 ) : (
   <ul>
     {movieList.map((movie)=>(
-<MovieCard/>
+<MovieCard key={movie.id} movie={movie}/>
  )) }
   </ul>
 )
