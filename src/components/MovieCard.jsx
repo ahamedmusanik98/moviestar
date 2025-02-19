@@ -4,7 +4,7 @@ const MovieCard = ({movie:{title,vote_average,poster_path,release_date,original_
 }) => {
   return (
     <div className='movie-card'>
-        <p className='text-white'>{title}</p>
+      <img  src={poster_path ?}/>
     </div>
   )
 }
