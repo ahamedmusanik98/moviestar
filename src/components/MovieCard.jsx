@@ -10,6 +10,8 @@ const MovieCard = ({movie:{title,vote_average,poster_path,release_date,original_
 <div className='mt-4'>
 <h3> {title}  </h3>
 
+<div className='content'></div>
+
 </div>
 
     </div>
