@@ -16,7 +16,7 @@ const MovieCard = ({movie:{title,vote_average,poster_path,release_date,original_
 <p>{vote_average ? vote_average.toFixed(1):'N/A'}</p>
 </div>
 
-<span>•</span>
+<span>•</span><span>•</span>
 <p className='lang'></p>
 </div>
 
