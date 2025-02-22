@@ -78,7 +78,7 @@ setMovieList(data.results || []);
 
 Find <span className='text-gradient'>Movies </span>You'll Enjoy Without the Hassle
 </h1>
-<Search searchTerm={searchTerm} setserachTerm={setSerachTerm}/>
+<Search searchTerm ={searchTerm} setserachTerm={setSerachTerm}/>
   </header>
   
  <section className ="all-movies">
