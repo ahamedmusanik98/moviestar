@@ -29,7 +29,7 @@ const App = () => {
 
   const [isLoading,setIsLoading] =useState(false);
   
-  const fetchMovies = async () => {
+  const fetchMovies = async (query ='') => {
     setIsLoading(true);
     setErrorMessage('');
 
