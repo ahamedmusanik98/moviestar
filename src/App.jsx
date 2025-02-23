@@ -34,7 +34,8 @@ const App = () => {
     setErrorMessage('');
 
     try {
-      const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+      const endpoint = query ?`${API_BASE_URL}/search/movie?query=${query}`
+      :`${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
   
       const response = await fetch(endpoint, API_OPTIONS);  
 
@@ -65,7 +66,7 @@ setMovieList(data.results || []);
 
   useEffect(()=>{
     fetchMovies(searchTerm);
-  },[]);
+  },[searchTerm]);
 
   return (
     <main> 
