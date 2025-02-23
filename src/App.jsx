@@ -64,7 +64,7 @@ setMovieList(data.results || []);
   
 
   useEffect(()=>{
-    fetchMovies();
+    fetchMovies(searchTerm);
   },[]);
 
   return (
